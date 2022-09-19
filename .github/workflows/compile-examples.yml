@@ -199,7 +199,7 @@ jobs:
           fqbn: ${{ env.platform-name }}:${{ matrix.device}},clock=internal_8m,${{matrix.soft-serial}}
           sketch-paths: |
             # It's necessary to jump through some hoops to dynamically generate the env object keys to define the non-universal sketch paths
-            # https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions#format
+            # https://docs.github.com/en/actions/learn-github-actions/expressions#format
             ${{ env[format('available-flash-8kB-plus-{0}-sketch-paths', matrix.available-flash-kB >= 7.5)] }}
             ${{ env[format('available-flash-4kB-plus-{0}-sketch-paths', matrix.available-flash-kB >= 4)] }}
             ${{ env[format('available-flash-2kB-plus-{0}-sketch-paths', matrix.available-flash-kB >= 2)] }}
