@@ -53,7 +53,7 @@ jobs:
 
       matrix:
         device:
-          #- attinyx4:chip=84
+          - attinyx4:chip=84
           #- attinyx4:chip=44
           #- attinyx4:chip=24
           #- attinyx41:chip=841
@@ -113,8 +113,8 @@ jobs:
           #  device: attiny828
           #- softserial: txonly
           #  device: attiny828
-          #- softserial:
-          #  device: attinyx4:chip=84
+          - softserial:
+            device: attinyx4:chip=84
           #- softserial:
           #  device: attinyx4:chip=44
           #- softserial:
@@ -146,8 +146,8 @@ jobs:
           #  available-flash-kB: 16
           #- device: attinyx7:chip=87
           #  available-flash-kB: 8
-          #- device: attinyx4:chip=84
-          #  available-flash-kB: 8
+          - device: attinyx4:chip=84
+            available-flash-kB: 8
           #- device: attinyx4:chip=44
           #  available-flash-kB: 4
           #- device: attinyx4:chip=24
