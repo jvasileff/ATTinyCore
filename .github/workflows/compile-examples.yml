@@ -54,26 +54,26 @@ jobs:
       matrix:
         device:
           - attinyx4:chip=84
-          #- attinyx4:chip=44
-          #- attinyx4:chip=24
-          #- attinyx41:chip=841
-          #- attinyx41:chip=441
+          - attinyx4:chip=44
+          - attinyx4:chip=24
+          - attinyx41:chip=841
+          - attinyx41:chip=441
           - attinyx5:chip=85
-          #- attinyx5:chip=45
-          #- attinyx5:chip=25
-          #- attinyx61:chip=861
-          #- attinyx61:chip=461
-          #- attinyx61:chip=261
-          #- attinyx7:chip=167
-          #- attinyx7:chip=87
-          #- attinyx8:chip=88
-          #- attinyx8:chip=48
+          - attinyx5:chip=45
+          - attinyx5:chip=25
+          - attinyx61:chip=861
+          - attinyx61:chip=461
+          - attinyx61:chip=261
+          - attinyx7:chip=167
+          - attinyx7:chip=87
+          - attinyx8:chip=88
+          - attinyx8:chip=48
           - attiny1634
-          #- attinyx313:chip=4313
-          #- attinyx313:chip=2313a
-          #- attiny828
-          #- attiny43u
-          #- attiny26
+          - attinyx313:chip=4313
+          - attinyx313:chip=2313a
+          - attiny828
+          - attiny43u
+          - attiny26
         softserial:
           -
           - enable
@@ -81,107 +81,107 @@ jobs:
 
         # Filter out these matrix combinations
         exclude:
-          #- softserial: enable
-          #  device: attinyx41:chip=841
-          #- softserial: enable
-          #  device: attinyx41:chip=441
-          #- softserial: txonly
-          #  device: attinyx41:chip=841
-          #- softserial: txonly
-          #  device: attinyx41:chip=441
-          #- softserial: enable
-          #  device: attinyx7:chip=87
-          #- softserial: enable
-          #  device: attinyx7:chip=167
-          #- softserial: txonly
-          #  device: attinyx7:chip=87
-          #- softserial: txonly
-          #  device: attinyx7:chip=167
-          #- softserial: enable
-          #  device: attinyx313:chip=4313
-          #- softserial: enable
-          #  device: attinyx313:chip=2313a
-          #- softserial: txonly
-          #  device: attinyx313:chip=4313
-          #- softserial: txonly
-          #  device: attinyx313:chip=2313a
+          - softserial: enable
+            device: attinyx41:chip=841
+          - softserial: enable
+            device: attinyx41:chip=441
+          - softserial: txonly
+            device: attinyx41:chip=841
+          - softserial: txonly
+            device: attinyx41:chip=441
+          - softserial: enable
+            device: attinyx7:chip=87
+          - softserial: enable
+            device: attinyx7:chip=167
+          - softserial: txonly
+            device: attinyx7:chip=87
+          - softserial: txonly
+            device: attinyx7:chip=167
+          - softserial: enable
+            device: attinyx313:chip=4313
+          - softserial: enable
+            device: attinyx313:chip=2313a
+          - softserial: txonly
+            device: attinyx313:chip=4313
+          - softserial: txonly
+            device: attinyx313:chip=2313a
           - softserial: enable
             device: attiny1634
           - softserial: txonly
             device: attiny1634
-          #- softserial: txonly
-          #  device: attiny828
-          #- softserial: txonly
-          #  device: attiny828
+          - softserial: txonly
+            device: attiny828
+          - softserial: txonly
+            device: attiny828
           - softserial:
             device: attinyx4:chip=84
-          #- softserial:
-          #  device: attinyx4:chip=44
-          #- softserial:
-          #  device: attinyx4:chip=24
+          - softserial:
+            device: attinyx4:chip=44
+          - softserial:
+            device: attinyx4:chip=24
           - softserial:
             device: attinyx5:chip=85
-          #- softserial:
-          #  device: attinyx5:chip=45
-          #- softserial:
-          #  device: attinyx5:chip=25
-          #- softserial:
-          #  device: attinyx61:chip=861
-          #- softserial:
-          #  device: attinyx61:chip=461
-          #- softserial:
-          #  device: attinyx61:chip=261
-          #- softserial:
-          #  device: attinyx8:chip=88
-          #- softserial:
-          #  device: attinyx8:chip=48
-          #- softserial:
-          #  device: attiny43u
-          #- softserial:
-          #  device: attiny26
+          - softserial:
+            device: attinyx5:chip=45
+          - softserial:
+            device: attinyx5:chip=25
+          - softserial:
+            device: attinyx61:chip=861
+          - softserial:
+            device: attinyx61:chip=461
+          - softserial:
+            device: attinyx61:chip=261
+          - softserial:
+            device: attinyx8:chip=88
+          - softserial:
+            device: attinyx8:chip=48
+          - softserial:
+            device: attiny43u
+          - softserial:
+            device: attiny26
         include:
           - device: attiny1634
             available-flash-kB: 16
-          #- device: attinyx7:chip=167
-          #  available-flash-kB: 16
-          #- device: attinyx7:chip=87
-          #  available-flash-kB: 8
+          - device: attinyx7:chip=167
+            available-flash-kB: 16
+          - device: attinyx7:chip=87
+            available-flash-kB: 8
           - device: attinyx4:chip=84
             available-flash-kB: 8
-          #- device: attinyx4:chip=44
-          #  available-flash-kB: 4
-          #- device: attinyx4:chip=24
-          #  available-flash-kB: 2
-          #- device: attinyx41:chip=841
-          #  available-flash-kB: 8
-          #- device: attinyx41:chip=441
-          #  available-flash-kB: 4
+          - device: attinyx4:chip=44
+            available-flash-kB: 4
+          - device: attinyx4:chip=24
+            available-flash-kB: 2
+          - device: attinyx41:chip=841
+            available-flash-kB: 8
+          - device: attinyx41:chip=441
+            available-flash-kB: 4
           - device: attinyx5:chip=85
             available-flash-kB: 5
-          #- device: attinyx5:chip=45
-          #  available-flash-kB: 4
-          #- device: attinyx5:chip=25
-          #  available-flash-kB: 2
-          #- device: attinyx61:chip=861
-          #  available-flash-kB: 8
-          #- device: attinyx61:chip=461
-          #  available-flash-kB: 4
-          #- device: attinyx61:chip=261
-          #  available-flash-kB: 2
-          #- device: attinyx8:chip=88
-          #  available-flash-kB: 8
-          #- device: attinyx8:chip=48
-          #  available-flash-kB: 4
-          #- device: attinyx313:chip=4313
-          #  available-flash-kB: 4
-          #- device: attinyx313:chip=2313a
-          #  available-flash-kB: 2
-          #- device: attiny828
-          #  available-flash-kB: 8
-          #- device: attiny43u
-          #  available-flash-kB: 4
-          #- device: attiny26
-          #  available-flash-kB: 2
+          - device: attinyx5:chip=45
+            available-flash-kB: 4
+          - device: attinyx5:chip=25
+            available-flash-kB: 2
+          - device: attinyx61:chip=861
+            available-flash-kB: 8
+          - device: attinyx61:chip=461
+            available-flash-kB: 4
+          - device: attinyx61:chip=261
+            available-flash-kB: 2
+          - device: attinyx8:chip=88
+            available-flash-kB: 8
+          - device: attinyx8:chip=48
+            available-flash-kB: 4
+          - device: attinyx313:chip=4313
+            available-flash-kB: 4
+          - device: attinyx313:chip=2313a
+            available-flash-kB: 2
+          - device: attiny828
+            available-flash-kB: 8
+          - device: attiny43u
+            available-flash-kB: 4
+          - device: attiny26
+            available-flash-kB: 2
 
     steps:
       - name: Checkout repository
